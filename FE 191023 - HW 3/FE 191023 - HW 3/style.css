@@ -1,0 +1,111 @@
+
+body {margin: 0;}
+
+.stuk {text-align: center;
+font-size: 48px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 4.8px;
+margin-top: 30px;}
+
+.st { color: #3E45E8;}
+.uk {color: #E8C23E;}
+
+.toptext {margin-top: 25px;
+    height: 766px;
+    color: #fff;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 157.3%;
+    padding-left: 141px;
+    padding-top: 251px;
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0% 0%;
+}
+.nmu {width: 650px;
+height: 63px;
+font-weight: 700;
+font-size: 40px;
+line-height: 62.95px;
+margin-left: 80px;
+margin-top: 48px ;}
+
+table { border: none;
+width: 779px;
+height: 12px;
+margin-top: 17px;} 
+
+.blue {background-color: #3E45E8;}
+.yellow {background-color: yellow;}
+
+.box {display: inline-block;
+    border: black solid;
+    width: 30%;
+height: 481px;
+vertical-align: top;
+margin-top: 30px;
+margin-left: 30px;
+border-radius: 10%;}
+
+
+.card {display: flex; 
+justify-content: top;
+align-items: center;
+width: 100%;
+height: 70%}
+
+.pic-name {font-size: 24px;
+font-weight: 700;
+line-height: 37.75px;
+color: #0072DB;
+margin-left: 20px;}
+
+.link {font-size: 20px;
+font-weight: 400;
+line-height: 31.46px;
+color: #FF9900;
+margin-left: 20px;}
+
+.nup {font-size: 40px;
+    font-weight: 700;
+text-align: center;
+margin-top: 45px ;
+color: black;}
+
+.line {margin: 0 auto;
+    margin-top: 26px;
+width: 792px;
+height: 7px;
+background-color: #3E45E8;
+;}
+
+.map { width: 1001px;
+height: 626px;
+margin: 0 auto;
+margin-top: 25px;}
+
+.go {width: 499px;
+height: 81px;
+background-color: #2A61F0;
+border-radius: 20px;
+text-align: center;
+font-size: 64px;
+font-weight: 700;
+color: #fff;
+padding-top: 10px;
+margin: 0 auto;
+margin-top: 23px;}
+
+a {text-decoration: none;}
+
+.futer {height: 233px;
+background-color: darkblue;}
+
+.mail, .tel {font-size: 36px;
+font-weight: 400;
+letter-spacing: 3.6px;
+line-height: 45.14px;
+color: #A89D9D; }
