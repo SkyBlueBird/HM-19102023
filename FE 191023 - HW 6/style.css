@@ -1,0 +1,212 @@
+@import url(https://fonts.googleapis.com);
+@import url(https://fonts.gstatic.com);
+@import url(https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Padauk:wght@400;700&family=Public+Sans&display=swap);
+
+
+:root {
+    ---dark-blue: #001124;
+    ---blue: #015FC7;
+    ---milk: #F9F9F9; 
+    ---gray: #EFEFEF; 
+    ---serif:  'DM Serif Display', serif;
+    ---padauk: 'Padauk', sans-serif;
+    ---pssns: 'Public Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.screen {
+    min-height: 100vh;
+    background-color: var(---dark-blue);
+    display: flex;
+    align-items: center;
+} 
+.picture2 {
+    margin-left: 10%;
+}
+.input-box {  
+    display: flex;   
+    flex-direction: column;
+    margin-left: 10%;
+}
+.box-name {
+    width: 361px;
+    font-size: 45px;
+    font-family: var(---serif);
+    font-weight: 400;
+    color: white;
+    margin-bottom: 32px;
+}
+
+.input-box label, p {
+    font-size: 20px;
+    font-family: var(---padauk);
+    font-weight: 400;
+    color: white;
+    width: 361px;
+    margin: 10px 0 0 0;
+}
+a {
+    color: var(---blue);
+    text-decoration: none
+}
+.button {
+    width: 180px;
+    height: 43px;
+    background-color: var(---blue);
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 20px;
+}
+.button a {
+    font-size: 20px;
+    font-family: var(---padauk);
+    font-weight: 700;
+    color: white;
+}
+.submit {
+    border-radius: 5px;
+    margin-left: 85px;
+}
+.information {
+    min-height: 100vh;
+    background-color: var(---milk);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.information p {
+    color: black;
+    font-weight: 600;
+}
+.intake {
+    width: 780px;
+    font-size: 24px;
+    font-family: var(---pssns);
+    font-weight: 700;
+    margin-top: 64px;
+}
+.mandatory-field {
+    width: 780px;
+    font-size: 14px;
+    font-family: var(---pssns);
+    font-weight: 400;
+    margin-top: 59px;
+}
+.info {
+    width: 780px;
+    font-size: 20px;
+    font-family: var(---pssns);
+    font-weight: 700;
+    margin: 24px 0 32px 0;
+}
+.form-box {
+    display: flex;
+    flex-direction: row;
+    width: 780px;    
+    gap: 20px;
+}
+.word-red {
+    color: red;
+}
+.form-box select, label, input {
+    width: 370px;
+    height:40px ;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: var(---pssns);
+    font-weight: 500;
+    color: var(---dark-blue);    
+}
+input, select {
+    padding-left: 10px;
+}
+.date-center {
+    text-align: center;
+}
+.gray {background-color: #EFEFEF;}
+.check-box {
+    display: none;   
+}
+.ch-bx {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.box {   
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    margin-right: 1rem;
+    border: 2px solid #333;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.check-box:checked + .ch-bx .box::after {
+    content: '\2714';
+    font-size: 20px;
+    color: white;
+}
+.check-box:checked + .ch-bx .box {
+    background-color: #F0F;
+    color: white;
+}
+.purget {
+    width: 25px;
+    height: 25px;
+    margin: 80px 0 34px 0;
+}
+.question {
+    font-size: 15px;
+    margin: 0;    
+}
+.check-box2 {
+    width: 25px;
+    height: 25px;  
+}
+.chck-bx {
+    width: 370px;
+    margin-right: 17px;
+}
+.maternity {
+    border-top: 4px solid var(---gray);
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.none {
+    color: #747474;
+}
+.next {
+    width: 69px;
+    height: 40px;
+    background-color: var(---blue);
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    font-family: var(---pssns);
+    text-align: center;
+    padding-top: 12px;    
+}
+.end {
+    display: flex;
+    justify-content: flex-end;
+}
+input[name="search"]{
+    background-image: url(./img/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+h1 {
+    color: lightseagreen; 
+    text-align: center;
+    
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Registration form</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="picture">
+            <img src="./img/login 1.png" alt="pic">
+        </div>
+        <form class="input-box">
+            <div class="box-name">Login</div>
+            <label>Email</label>
+            <input type="email" autocomplete="email" placeholder="email@com.ua" required>
+            <label>Password</label>
+            <input type="password" name="password" id="password" required>
+            <p><a href="#">Form 2</a></p>
+            <p>Not a user?<a href="#"> Register now</a></p>
+            <div class="button"><a href="#">LOGIN</a></div>
+        </form>
+    </div>
+    <div class="screen">
+        <div class="picture2">
+            <img src="./img/Figure.png" alt="pic">
+        </div>
+        <form class="input-box">       
+            <div class="box-name">Registration form</div>
+            <label>Name</label>
+            <input type="text" name="name" id="name">
+            <label>Date Of Birth</label>
+            <input type="date" name="date-of-birth" id="number">
+            <label>Father’s/Mother’s Name</label>
+            <input type="text">
+            <label>Email</label>
+            <input type="email" autocomplete="email" placeholder="email@com.ua" required>
+            <label>Mobile No.</label>
+            <input type="tel" name="phone" id="phone" placeholder="555-55555" pattern="\d{3}-\d{5}"/>
+            <label>Password</label>
+            <input type="password" name="password" id="login" required>
+            <label>Re-enter Password</label>
+            <input type="password" name="password" id="login" required>
+            <label>home Number</label>
+            <input type="number" name="homenumber" id="number">
+            <div class="button submit"><a href="#">SUBMIT</a></div>
+        </form>
+    </div>       
+        <div class="information">
+            <p class="intake">Intake Main Flow</p>
+            <p class="mandatory-field">* Mandatory field</p>
+            <p class="info">Information</p>
+            <div class="form-box">
+                <form>
+                    <label for="type">Intake Type <span class="word-red">*(select)</span></label>
+                    <select id="type">
+                        <option value="1">big</option>
+                        <option value="1">small</option>
+                        <option value="1">new</option>
+                        <option value="1">old</option>
+                        <option disabled selected>Referral <img src="./img/arrow-down-s-line.png" alt="pointer"></option>
+                    </select>
+                    <label>phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="555-55555" pattern="\d{3}-\d{5}" />
+                    <label>email</label>
+                    <input type="email" name="mail" autocomplete="email" placeholder="email@com.ua" required>
+                    <label for="type">Application Registration <span>(Optional)</span></label>
+                    <select id="type">
+                        <option value="1">big</option>
+                        <option value="1">small</option>
+                        <option value="1">new</option>
+                        <option value="1">old</option>
+                        <option disabled selected>APP0000116 <img src="./img/arrow-down-s-line.png" alt="pointer"></option>
+                    </select>
+                    <label>Additional Information Requested Date (Optional)</label>
+                    <input class="date-center" type="date" name="date">
+                    <label >Remaining Days Before Referral is Purged (Optional)</label>
+                    <input type="number" name="number">
+                    <label>Fee Payment Date (Optional)</label>
+                    <input class="date-center" type="date" name="date">
+                    <input class="check-box" type="checkbox" id="checkbox" name="Application">
+                    <label class="ch-bx" for="checkbox"><span class="box"></span>Application Fee Processed</label>
+                   
+                </form>
+                <form>
+                    <label for="type">Enrollment Initiation Date jquery</span></label>
+                    <input class="gray" type="date" name="date">
+                    <label>Application Category*</label>
+                    <select id="type">
+                        <option value="1">big</option>
+                        <option value="1">small</option>
+                        <option value="1">new</option>
+                        <option value="1">old</option>                        
+                    </select>                    
+                    <label>Enrollment Submission Date (Optional)</label>
+                    <input class="date-center gray" type="date" name="date">
+
+                    <div>
+                        <input class="purget" type="checkbox" id="checkbox1" name="Purged">
+                        <label for="checkbox1">Purged</label>   
+                    </div>
+                    
+                    <label>Exempt from Paternity (Optional) (select)</label>
+                    <select id="type">
+                        <option value="1">yes</option>
+                        <option disabled selected>No<img src="./img/arrow-down-s-line.png" alt="pointer"></option>
+                    </select>
+                    <label>Enrollment Status (Optional)</label>
+                    <select id="type">
+                        <option value="1">YES</option>
+                        <option value="1">NO</option>
+                        <option disabled selected>Worklisted<img src="./img/arrow-down-s-line.png" alt="pointer"></option>
+                    </select>
+                   
+                </form>
+            </div>  
+            <p class="info maternity">Maternity Information</p>   
+            <div class="form-box">
+                <form > 
+                    <div class="chck-bx">
+                        <input class="check-box2" type="checkbox" id="checkbox2" name="question">                        
+                        <label class="question" for="checkbox2">Are you requesting child support services for an
+                            unborn child?</label>
+                      
+                    </div>                 
+                </form>
+                <form>                    
+                    <label>Other known biological parent? (Optional)</label>
+                    <select id="type">
+                        <option value="1">big</option>
+                        <option disabled selected>None</option>                                               
+                    </select>                    
+                </form>
+        </div>   
+        <p class="info maternity">Official Use</p>  
+
+        <div class="form-box">
+            <form>
+                <label for="type">Case Category (select)</label>
+                <select id="type">
+                    <option value="1">new</option>
+                    <option value="1">old</option>
+                    <option disabled selected>Active IV-A<img src="./img/arrow-down-s-line.png" alt="pointer"></option>
+                </select>
+
+                <label for="type">Arrears Only Indicator (Optional)</label>
+                <select id="type">
+                    <option value="1">new</option>
+                    <option value="1">old</option>
+                    <option class="none" disabled selected>None<img src="./img/arrow-down-s-line.png" alt="pointer"></option>
+                </select>
+
+                <label for="type">Assigned County of Ownership (Optional)</label>
+                <select id="type">
+                    <option value="1">new</option>
+                    <option value="1">old</option>
+                    <option class="none" disabled selected>None<img src="./img/arrow-down-s-line.png" alt="pointer"></option>
+                </select>
+
+                <label for="type">Intergovermental Case Status (details)</label>
+                <select id="type">
+                    <option value="1">new</option>
+                    <option value="1">old</option>
+                    <option class="none" disabled selected>None<img src="./img/arrow-down-s-line.png" alt="pointer"></option>
+                </select>
+
+                <label for="type">Special Handling Indicator for Applicant (Optional)</label>
+                <select id="type">
+                    <option value="1">new</option>
+                    <option value="1">old</option>
+                    <option class="none" disabled selected>None<img src="./img/arrow-down-s-line.png" alt="pointer"></option>
+                </select>
+               
+                <label for="type">Special Handling Indicator for Other Parent (Optional)</label>
+                <select id="type">
+                    <option value="1">new</option>
+                    <option value="1">old</option>
+                    <option class="none" disabled selected>None<img src="./img/arrow-down-s-line.png" alt="pointer"></option>
+                </select>           
+               
+            </form>
+
+            <form>
+                <label for="type">IV-D Indicator*</label>
+                <select id="type">
+                    <option value="1">new</option>
+                    <option value="1">old</option>
+                    <option disabled selected>Non-IV-D<img src="./img/arrow-down-s-line.png" alt="pointer"></option>
+                </select>
+
+                <label for="type">Intergovernmental Case Category (Optional)</label>
+                <select id="type">
+                    <option value="1">new</option>
+                    <option value="1">old</option>
+                    <option class="none" disabled selected>None<img src="./img/arrow-down-s-line.png" alt="pointer"></option>
+                </select>
+
+                <label for="type">Intergovernmental Case Type (Optional)</label>
+                <select id="type">
+                    <option value="1">new</option>
+                    <option value="1">old</option>
+                    <option class="none" disabled selected>None<img src="./img/arrow-down-s-line.png" alt="pointer"></option>
+                </select>
+
+                <label for="type">Case Number</label>
+                <input type="search" name="search" placeholder="Search Case Number" id="Search Case Number">    
+                
+                <label for="type">Referral Number</label>
+                <input type="search" name="search" placeholder="Search Referral Number">                  
+               
+            </form>            
+        </div>  
+        <p class="info maternity">System Information</p>  
+        <div class="form-box">
+            <form>
+                <label for="type">Enrollment Taken by User</label>
+                <input type="search" name="search"placeholder="Search Input" >    
+                
+                <label for="type">Worker (Optional)</label>
+                <input type="search" name="search" placeholder="Search Input">                  
+               
+            </form> 
+            <form>
+                <label for="type">Intake Supervisor (Optional)</label>
+                <input type="search" name="search"placeholder="Search" >    
+                
+                <label for="type">Owner (Optional)</label>
+                <input type="search" name="search" placeholder="Rajaneesh Banal">                  
+               
+            </form>            
+        </div>
+        <div class="info maternity end">
+            <div class="next">NEXT</div>
+        </div>  
+    </div>
+    <!--<h1>Switch</h1>  не получівся -->
+</body> 
+</html>
