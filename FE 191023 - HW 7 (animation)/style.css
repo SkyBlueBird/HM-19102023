@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+html {
+    --black: #000;
+    --white: #FFFCFC; 
+    --font: 'Rosario', sans-serif;
+}
+
+body {margin: 0;}
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;    
+/*  border: 2px solid rgb(255, 0, 242); */
+}
+
+header {
+    background-color: var(--black);
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+.header {
+    width: 1920px;
+    height: 130px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    align-items: center;     
+}
+.header img, nav {margin: 0;}
+.nav {
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between; 
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+.nav li { width: 100%;}
+
+.nav a {
+    font-family: var(--font);
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--white);
+    padding-top: 20px;
+    text-decoration: none;
+}
+.gallery {
+    width: 1920px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 0;
+}
+.section__pic {
+    width: 25%;
+    height: 80%;
+    position: relative;   
+    animation-timing-function: linear;
+    animation-iteration-count: unset;  
+}
+.one {
+    width:370px ;
+    height: 585px;
+    border-radius: 40px;
+}
+.two {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    gap: 42px;
+}
+
+.right-two {
+    animation-name: right-two;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+@keyframes right-two {
+    0%   {left: -50%; }
+    100%  {left: 0%; }
+}
+.right-one {
+    left: -50%;
+    animation-name: right-one;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes right-one {
+    0%   {left: -50%; }
+    100%  {left: 0%; opacity: 1;}
+}
+.left-two {
+    animation-name: left-two;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+@keyframes left-two {
+    0%   {left: 50%; }
+    100%  {left: 0%; }
+} 
+
+.left-one {
+    left: 50%;
+    animation-name: left-one;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes left-one {
+    0%   {left: 50%; }
+    100%  {left: 0%; }
+} 
+.services {padding: 0;}
+
+.carusel-item {
+    
+    margin: 0 ; 
+    width: auto;
+    height: 20%;
+    position: relative;   
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;   
+
+}
+.item-one {
+    animation-name: item-one;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+@keyframes item-one {
+    0%   {left:0%; top:0%;}
+    25%  {left:55%; top:0px;}
+    50%  {left:55%; top:50%;}
+    75%  {left:0px; top:50%;}
+    100% {left:0px; top:0px;}
+  }
+  .item-two {    
+    animation-name: item-two;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+  @keyframes item-two {
+    0%   {right:-10%; top:0px;}
+    25%  {right:-10%; top:50%;}
+    50%  {right:45%; top:50%;}
+    75%  {right:45%; top:0px;}
+    100% {right:-10%; top:0px;}
+  } 
+  .item-three {    
+    animation-name: item-three;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+  @keyframes item-three {
+    0%   {left:0%; top:-2%;}
+    25%  {left:0%; top:-52%;}
+    50%  {left:55%; top:-52%;}
+    75%  {left:55%; top:-2%;}
+    100% {left:0%; top:-2%}
+  } 
+
+  .item-four {    
+    animation-name: item-four;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+  @keyframes item-four {
+    0%   {right:-10%; top:-2%;}
+    25%  {right:45%; top:-2%;}
+    50%  {right:45%; top:-52%;}
+    75%  {right:-10%; top:-52%;}
+    100% {right:-10%; top:-2%}
+  } 
+
+.carusel-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;  
+    
+    width: 860px;
+    height: 860px;
+}
+.styler {
+    width: 50%;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 94px;
+    padding: 50px 0;
+}
+.team { 
+    padding-bottom: 50px;    
+}
+
+.team img {border-radius: 40px;}
+h2 {
+    width: 936px;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.person {	
+    border-radius: 40px;
+    position: relative;  
+}
+.person span {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    text-align: center;   
+    display: block;
+    height: 15%;
+    width: 100%;
+    padding-top: 7%;
+    background-color: lightsalmon;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 40px 40px;
+    z-index: -1;
+    overflow: hidden;
+}
+.person img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+} 
+.person img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; 
+   } 
+   .person:hover ~ div img {
+    filter: brightness(50%);
+   }
+   
+   .person:has(~ div:hover) img {
+    filter: brightness(50%);
+   }
+   .person:hover span {
+    opacity: 0.9;
+    z-index: 9;
+   }
+
+   @keyframes person {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+   }
+.person:hover {
+    animation: person .5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+h2 {
+    width: 936px;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+table {   
+    border-collapse: collapse;  
+}
+tr, td { border: 45px solid #E5E5E5;}
+input {padding-left: 20px;}
+.name {
+    width: 380px;
+    height: 80px;
+}
+.email {
+    width: 452px;
+    height: 80px;
+}
+.mes-ge {
+    width: 878px;
+    height: 210px;
+    padding-bottom: 150px;
+}
+.map {
+    width: 626px;
+    height: 626px;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
+.footer {
+    justify-content: space-evenly;
+}
+.footer-info {    
+    margin: 0;
+    width: 30%;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+}
+.fotter-info img {
+    width:23px;
+    height: 32px;
+}
+.monday {
+    font-size: 45px;
+    padding-bottom: 20px;
+}
