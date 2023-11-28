@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+html {
+    --font:  'Work Sans', sans-serif;
+}
+body {
+    margin: 0;
+} 
+* {
+     box-sizing: border-box;
+} 
+section {
+    display: grid;
+    width: 755px;
+    height: 460px;
+    padding: 28px 27px; 
+    background-color: #FFB084;
+    margin: 50px auto 0;    
+    gap: 16px;
+    grid-template-columns: 35% 25% 25%;
+    justify-content: center;  
+    grid-auto-rows: 90px; 
+  }   
+div { 
+    background-color: white;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+ul {
+    margin: 0;
+    padding-top: 10px;
+}
+.main-bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;   
+    box-shadow: 0 5px black, 5px 0 black;
+    grid-row: 1/4;
+    
+} 
+.bio, .personality, .me {box-shadow: 0 5px black, 5px 0 black;}
+.main-bloc p {
+    font-size: 24px;
+    font-family: 700;
+    font-family: var(--font);
+}
+.main-bloc span {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: var(--font);
+}
+.main-bloc li {
+    list-style: none;
+}
+p { font-size: 14px;
+    font-weight: 700;
+    font-family: var(--font);
+    margin: 0;
+}
+.bio {
+    grid-column: 2/4;  
+    padding-top: 5px;  
+}
+.goals {box-shadow: 0 5px #29A71E, 5px 0 #29A71E;}
+.goals p {
+    color: #29A71E;    
+}
+.frustrations {
+    grid-column-start: 3;
+    grid-row: 2/4;
+    box-shadow: 0 5px #E13535, 5px 0 #E13535;
+    padding: 10px;
+}
+.frustrations p {
+    color: #E13535;    
+}
+.dream {
+    grid-row: 3/5;
+    box-shadow: 0 5px #3675B0, 5px 0 #3675B0;
+    padding: 20px;
+}
+.dream p {
+    color: #3675B0;
+}
+.frustrations {
+    grid-row: 2/4;
+}
+.me {padding: 20px 20px;}
+.personality {padding: 10px;}
